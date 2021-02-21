@@ -8,8 +8,10 @@ describe('GET /', () => {
     })
 })
 
-describe('GET /typingErrorTest', () => {
-    it('respond with error', (done) => {
-        request(app).get('/typingErrorTest').expect('일부러 에러냄',done);
-    })
-})
+// describe('GET /typingErrorTest', () => {
+//     it('respond with error', (done) => {
+//         request(app).get('/typingErrorTest').expect('일부러 에러냄',done);
+//     })
+// })
+
+//에러나면 빌드 안되는 것까지 확인~~
