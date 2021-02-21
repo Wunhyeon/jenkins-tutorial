@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh cc2-user@13.125.206.128:3000 <<EOF
+ssh cc2-user@13.125.206.128 <<EOF
     cd ~/jenkins-tutorial
     git pull origin master
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
