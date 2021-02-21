@@ -7,3 +7,9 @@ describe('GET /', () => {
         request(app).get('/').expect('hello world!',done);
     })
 })
+
+describe('GET /typingErrorTest', () => {
+    it('respond with error', (done) => {
+        request(app).get('/typingErrorTest').expect('일부러 에러냄',done);
+    })
+})

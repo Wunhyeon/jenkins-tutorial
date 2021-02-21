@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
     res.send('hello world!');
 })
 
+app.get('/typingErrorTest', (req, res) => {
+    res.send('error');
+})
+
 app.listen(PORT,() => {
     console.log(`Server Listening on ${PORT}`);
 })
